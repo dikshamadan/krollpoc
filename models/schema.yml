@@ -10,3 +10,59 @@ sources:
       - name: sf_contact_activities
       - name: sf_campaign_activities
       - name: sf_opportunities       # 👈 table name inside schema
+
+
+# models:
+#   - name: fact_sf_opportunities
+#     columns:
+#       - name: account_id
+#         tests:
+#           - relationships:
+#               to: ref('dim_sf_accounts')
+#               field: account_id
+#               config:
+#                 severity: warn
+#       - name: opportunity_id
+#         tests:
+#           - relationships:
+#               to: ref('dim_sf_opportunities')
+#               field: opportunity_id
+#               config:
+#                 severity: warn
+
+#   - name: fact_sf_contact_activities
+#     columns:
+#       - name: contact_id
+#         tests:
+#           - relationships:
+#               to: ref('dim_sf_contact_activities')
+#               field: contact_id
+#               config:
+#                 severity: warn
+#       - name: account_id
+#         tests:
+#           - relationships:
+#               to: ref('dim_sf_accounts')
+#               field: account_id
+#               config:
+#                 severity: warn
+
+
+#   - name: fact_sf_campaign_activities
+#     columns:
+#       - name: activity_id
+#         tests:
+#           - relationships:
+#               to: ref('dim_sf_campaign_activities')
+#               field: contact_id
+#               config:
+#                 severity: warn
+#       - name: contact_id
+#         tests:
+#           - relationships:
+#               to: ref('fact_sf_contact_activities')
+#               field: account_id
+#               config:
+#                 severity: warn
+
+
