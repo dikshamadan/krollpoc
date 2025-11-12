@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: kroll_volume
+    database: workspace        # 👈 catalog name
+    schema: kroll_data       # 👈 schema name
+    tables:
+      - name: ga4_data 
+      - name: sf_accounts
+      - name: sf_contact_activities
+      - name: sf_campaign_activities
+      - name: sf_opportunities       # 👈 table name inside schema
