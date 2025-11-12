@@ -24,6 +24,14 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
+<<<<<<< HEAD
+=======
+flags:
+  use_materialization_v2: true
+  use_managed_iceberg: true
+
+
+>>>>>>> 575eb18ca1ed62a5d9c912023ef7f2d3264e5cf4
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -37,6 +45,14 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   my_new_project:
+<<<<<<< HEAD
     # Applies to all files under models/example/
     example:
       +materialized: table
+=======
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
+
+>>>>>>> 575eb18ca1ed62a5d9c912023ef7f2d3264e5cf4
